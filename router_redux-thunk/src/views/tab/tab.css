@@ -1,0 +1,14 @@
+.lis {
+    width: 100%;
+    display: flex
+}
+
+.lis span {
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 5px;
+}
+
+.liCon span {
+    margin-left: 20px;
+}
