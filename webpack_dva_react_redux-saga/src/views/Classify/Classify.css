@@ -1,0 +1,57 @@
+.classify {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #ccc;
+    overflow: hidden;
+}
+
+.left-wrapper {
+    width: 30%;
+    height: 100%;
+    /* display: flex; */
+    overflow: hidden;
+}
+
+.left-wrapper li {
+    width: 100%;
+    height: .4rem;
+    line-height: .4rem;
+    text-align: center;
+    background: #f1f1f1;
+}
+
+.right-wrapper {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+}
+
+.right-wrapper dl {
+    width: 100%;
+    height: .8rem;
+    position: relative;
+    padding-left: .7rem;
+}
+
+.right-wrapper dl dt {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.left-content {
+    /* flex: 1; */
+    /* overflow-y: scroll; */
+}
+
+.left-wrapper li.on {
+    color: red;
+    background: #fff;
+    border-left: 2px solid red;
+}
+
+
+/* .left-content {
+    width: 80%
+} */

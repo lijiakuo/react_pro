@@ -1,0 +1,17 @@
+.footer{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+.footer a {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+}
+
+.on {
+    background: #eee;
+}
