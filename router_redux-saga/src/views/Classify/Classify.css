@@ -1,0 +1,20 @@
+.classify{
+  display: flex;
+}
+.left{
+  width:20%;
+  height: auto;
+}
+.left a{
+  width: 100%;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: pink;
+  border-bottom: 1px solid #ccc;
+}
+.right{
+  flex: 1;
+  background: blue
+}
