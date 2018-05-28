@@ -12,7 +12,7 @@ class Home extends Component{
       homeList:null
     }
   }
-  render(){
+  render(){ 
     
     return (
       <div>

@@ -11,7 +11,7 @@ const Random = Mock.Random
     //             title: Random.csentence(5, 30),
     //             pic: Random.dataImage('300x250', 'mock的图片')
     //         }))
-    //     }
+    //     } 
 
 // }
 for (let i = 0; i < arr.length; i++) {

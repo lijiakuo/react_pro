@@ -7,4 +7,4 @@ export const getClassify = (params) => {
 }
 export const getHome = (params) => {
     return $http.post('/home', params)
-}
+} 

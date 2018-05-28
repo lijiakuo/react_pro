@@ -6,7 +6,7 @@ export const getClassifyFn = (classifyDatas) => {
             type: types.GET_CLASSIFY_SUCC,
             classifyDatas
         })
-    }
+    } 
 }
 export const resClassify = () => {
     return {
