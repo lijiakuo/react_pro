@@ -1,0 +1,33 @@
+.on {
+    background: pink;
+}
+
+.lis {
+    flex: 1;
+    text-align: center;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hea {
+    width: 100%;
+    height: .4rem;
+    background: pink;
+}
+
+.main {
+    width: 100%;
+    flex: 1;
+    overflow-y: scroll;
+}
+
+.fot {
+    width: 100%;
+    height: .4rem;
+    border-top: 1px solid #ccc;
+}

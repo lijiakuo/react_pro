@@ -1,0 +1,14 @@
+.jd {
+    display: flex;
+    /* background: pink; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.jd dl {
+    width: 45%;
+}
+
+.jd dl img {
+    width: 80%;
+}

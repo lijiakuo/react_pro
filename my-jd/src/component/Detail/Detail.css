@@ -1,0 +1,23 @@
+.detail {
+    width: 100%;
+    height: auto;
+}
+
+.detail img {
+    width: 50%;
+    height: auto;
+}
+
+.sp {
+    flex-direction: column
+}
+
+.imgs {
+    width: 100%;
+    height: auto;
+}
+
+.imgs img {
+    width: 70px;
+    height: 70px;
+}

@@ -1,0 +1,2 @@
+export const GET_LOGIN_SUCC = 'GET_LOGIN_SUCC'
+export const GET_LOGIN_REQ = 'GET_LOGIN_REQ'

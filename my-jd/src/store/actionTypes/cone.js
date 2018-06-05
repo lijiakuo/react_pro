@@ -1,0 +1,1 @@
+export const GET_CONE_SUCC = 'GET_CONE_SUCC'

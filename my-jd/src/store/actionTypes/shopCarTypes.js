@@ -1,0 +1,2 @@
+export const GET_SHOPC_SUCC = 'GET_SHOPC_SUCC'
+export const GET_SHOPC_RES = 'GET_SHOPC_RES'
