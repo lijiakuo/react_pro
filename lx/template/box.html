@@ -1,0 +1,76 @@
+<div>
+    <style>
+        .ban{
+            width: 100%;
+            height: auto;
+        }
+        .ban img{
+            width: 100%;
+            height: 5rem;
+            display: block;
+        }
+        .cen{
+            width: 100%;
+            height: 2rem;
+            padding-top: .5rem; 
+            text-align: center;
+            border-bottom: 2px solid #ccc;
+            line-height:1.5;
+            /* line-height: 2rem; */
+        }
+        .cen span{
+            margin-right: .2rem;
+        }
+        .list{
+             padding: 0 .2rem; 
+        }
+        .wri{
+            width: 100%;
+            height: 1.2rem;
+            display: flex;
+            /* background: pink; */
+            padding: 0 .2rem; 
+            justify-content: space-between; 
+        }
+        .wri span{
+            line-height: 1.2rem;
+        }
+        .wri img{
+            width: .9rem;
+            display: block;
+            position: relative;
+            top:.1rem;
+            height: .9rem;
+            vertical-align: middle;
+        }
+        .list li{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: .8rem;
+            line-height: .8rem;
+            border-bottom: 1px solid #ccc;
+        }
+
+    </style>
+    <div class="ban">
+        <img ng-src={{arr.src}}>
+    </div>
+    <div class="cen">
+        <h3>{{arr.name}}</h3>
+        <p><span ng-repeat="m in arr.con">{{m}}</span></p>
+    </div>
+    <div class="list">
+        <div class="wri">
+            <span>{{arr.writor.name}}</span>
+            <span><img ng-src={{arr.writor.src}}></span>
+        </div>
+        <ul class="list">
+            <li ng-repeat="lis in arr.list">
+                <span ng-repeat="lia in lis.tit">{{lia}}</span>
+                <!-- <span ng-repeat="lia in arr.list.tit">{{lia}}</span> -->
+                <!-- {{arr.list}} -->
+            </li>
+        </ul>
+    </div>
+</div>

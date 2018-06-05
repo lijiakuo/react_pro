@@ -1,0 +1,30 @@
+function config($stateProvider,$urlRouterProvider){
+    $urlRouterProvider.otherwise('/home')
+    $stateProvider
+        .state('home',{
+            url:'/home',
+            template:"<dir></dir>",
+        })
+        .state("index",{
+            url:"/index",
+            params:{key:0},
+            templateUrl:"../template/box.html",//当视图加载完成就去懒加载
+            controller:['$scope','$stateParams','ajax',function($scope,$stateParams,ajax){
+                console.log($stateParams.key);
+                $scope.defer=ajax({
+                    url:"http://localhost:3000/a",
+                    method:"POST",
+                    data:{id:$stateParams.key}
+                })
+                $scope.$watch('defer.value',function(newVal,oldVal){
+                    console.log(newVal);
+                    if(newVal!=oldVal){
+                        $scope.arr=newVal;
+                    }
+                })
+            }]
+        })
+}
+angular.module('myApp')
+    .config(config);
+

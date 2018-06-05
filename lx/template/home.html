@@ -1,0 +1,39 @@
+ <div class="wrap">
+        <header>
+            <span>
+                <i ng-click="click($event)" class="icon iconfont icon-xiangzuo"></i>
+                <img src="../images/xcf.png" alt="">
+            </span>
+            <span>
+                <small>用APP打开</small>
+                <small>立即下载</small>
+            </span>
+        </header>
+        <main>
+             <div class="fri">
+                <h1>家常菜</h1>
+                <p>
+                    <span>
+                        最受欢迎
+                    </span>
+                    <span>
+                        最近流行
+                    </span>
+                </p>
+            </div> 
+            <ui-view>
+                <div class="dls">
+                    <dl ng-repeat="val in arr" ui-sref="index({key:val.id})">
+                        <dt>
+                            <img ng-src={{val.src}}>
+                        </dt>
+                        <dd>
+                            <h2>{{val.tit}}</h2>
+                            <p><span ng-repeat="f in val.pf">{{f}}</span></p>
+                        </dd>
+                    </dl>
+                </div>       
+            </ui-view>
+            
+        </main>
+    </div>

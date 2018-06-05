@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+body, html, .wrap, .kk {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-size: .32rem; }
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+
+header {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  line-height: 1rem;
+  justify-content: space-between;
+  padding: 0 .2rem;
+  border-bottom: 2px solid #ccc; }
+  header i.icon {
+    font-size: .08rem; }
+  header img {
+    width: 1.5rem;
+    height: .5rem;
+    vertical-align: middle; }
+  header small {
+    padding: .1rem; }
+  header small:nth-child(1) {
+    margin-right: .2rem;
+    border: 1px solid #FA6650; }
+  header small:nth-child(2) {
+    background: #FA6650;
+    color: #fff; }
+
+main {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  overflow-y: scroll; }
+
+.fri {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  line-height: 1rem;
+  padding: 0 .2rem;
+  justify-content: space-between; }
+  .fri p span {
+    color: #ccc; }
+  .fri p span:nth-child(1) {
+    color: #FA6650;
+    margin-right: .2rem; }
+  .fri p span:nth-child(2) {
+    color: #ccc; }
+
+.dls {
+  width: 100%;
+  height: auto;
+  padding: 0 .2rem; }
+  .dls img {
+    width: 2.25rem;
+    height: 1.7rem; }
+  .dls dt {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .dls dl {
+    width: 100%;
+    height: 1.75rem;
+    padding-left: 3rem;
+    position: relative;
+    margin-top: .2rem; }
+  .dls p span {
+    margin-right: .2rem; }
+
+/*# sourceMappingURL=style.css.map */
