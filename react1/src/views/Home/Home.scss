@@ -1,0 +1,64 @@
+.index-home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.header {
+    width: 100%;
+    height: .4rem;
+}
+
+.main {
+    flex: 1;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.dls {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dls dl {
+    width: 23%;
+    /* line-height: .2rem; */
+    margin-top: .1rem;
+    /* line-height: .05rem; */
+    height: auto;
+    text-align: center;
+}
+
+.lists {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+    justify-content: space-between;
+    dl {
+        width: 46%;
+        margin-top: .1rem;
+        &:nth-of-type(2n+1) {
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+    }
+    img {
+        width: 1.55rem;
+        height: 1.57rem;
+        display: block;
+    }
+    p {
+        font-size: .08rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden
+    }
+}

@@ -1,0 +1,32 @@
+.classify {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cl-con {
+    display: flex;
+    flex: 1;
+    overflow-y: scroll;
+    .cl-con-left {
+        width: 30%;
+        background: #f1f1f1;
+        li {
+            width: 100%;
+            height: .4rem;
+            text-align: center;
+            line-height: .4rem;
+        }
+    }
+    .cl-con-right {
+        width: 70%;
+        background: pink;
+    }
+}
+
+.cl-active {
+    background: #fff;
+    color: red;
+    border-left: 2px solid red;
+}
